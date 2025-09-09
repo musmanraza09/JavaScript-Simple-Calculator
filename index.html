@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <link rel="stylesheet" href="./style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>JS Simple Calculator</title>
+</head>
+<body>
+  <h1 style="font-family: Epunda Slab, serif; font-weight: bold; color: rgb(76, 247, 153);" class="d-flex justify-content-center text-center mt-3">
+  ✨Simple JavaScript Calculator✨
+</h1>
+
+<h1 style="font-family: Epunda Slab, serif; color: rgb(89, 219, 236);" class="d-flex justify-content-center text-center mt-3">
+  Made By <span style="color: rgb(244, 168, 27); font-weight: bold; font-family: Epunda Slab, serif;">"Hafiz Muhammad Usman Raza".</span>
+</h1>
+
+<div class="d-flex justify-content-center align-items-center">
+  <div class="calculator d-flex justify-content-center align-items-center w-50 mt-3 bg-dark">
+    <div class="w-100">
+     
+      <div class="buttons">
+         <input type="text" id="display" readonly>
+
+        <button onclick="clearDisplay()" class="clear">AC</button>
+        <button onclick="delChar()">C</button>
+        <button onclick="append('/')" class="operator">÷</button>
+        <button onclick="append('*')" class="operator">x</button>
+
+        <button onclick="append('7')">7</button>
+        <button onclick="append('8')">8</button>
+        <button onclick="append('9')">9</button>
+        <button onclick="append('-')" class="operator">-</button>
+
+        <button onclick="append('4')">4</button>
+        <button onclick="append('5')">5</button>
+        <button onclick="append('6')">6</button>
+        <button onclick="append('+')" class="operator">+</button>
+
+        <button onclick="append('1')">1</button>
+        <button onclick="append('2')">2</button>
+        <button onclick="append('3')">3</button>
+        <button onclick="append('0')">0</button>
+
+        <button onclick="append('.')">.</button>
+         <button onclick="append('00')">00</button>
+
+        <button onclick="calculate()" class="equal">=</button>
+      </div>
+    </div>
+  </div>
+</div>
+<p class="footer">© All Rights Reserved | Made By <span style="color:#00e5ff;">Muhammad Usman Raza</span></p>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</html>
