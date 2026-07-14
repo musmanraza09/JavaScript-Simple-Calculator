@@ -1,6 +1,7 @@
 var display = document.getElementById("display");
 
-function append(value) {
+function append(value) 
+ {
   var lastChar = display.value.slice(-1);
   var operators = ["+", "-", "*", "/"];
 
